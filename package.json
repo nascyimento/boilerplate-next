@@ -19,7 +19,7 @@
   "lint-staged": {
     "src/**/*": [
       "npm run lint",
-      "npx jest --findeRelatedTests --bail"
+      "npx jest --findRelatedTests --bail"
     ]
   },
   "dependencies": {
