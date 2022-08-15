@@ -1,13 +1,25 @@
-import { Component } from "react";
-import "../styles/globals.css";
+import { AppProps } from "next/app";
+import Head from "next/head";
+import GlobalStyles from "../styles/global";
 
-type MyAppProps = {
-   Component: new () => Component<any, any>;
-   pageProps: object;
-};
-
-function MyApp({ Component, pageProps }: MyAppProps) {
-   return <Component {...pageProps} />;
+function App({ Component, pageProps }: AppProps) {
+   return (
+      <>
+         <Head>
+            <title>Boilerplate - Next</title>
+            <meta
+               name="description"
+               content="Boilerplate to work with TypeScript, React, NextJS and Styled Components"
+            />
+            <meta name="author" content="Eduardo Melo" />
+            <link rel="shortcut icon" href="/assets/icon-512.png" />
+            <link rel="apple-touch-icon" href="/assets/icon-512.png" />
+            <link rel="manifest" href="/manifest.json" />
+         </Head>
+         <GlobalStyles />
+         <Component {...pageProps} />
+      </>
+   );
 }
 
-export default MyApp;
+export default App;
