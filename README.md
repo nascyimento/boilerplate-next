@@ -1,16 +1,16 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## A boilerplate ready to start working with:
-   
+
    - NextJS
-   - React 
+   - React
    - TypeScript
    - Styled Components
    - Jest
    - StoryBook
-   - Husky 
+   - Husky
    - Lint Staged
-   - ESLint 
+   - ESLint
    - Prettier
 
 ## Getting Started
@@ -18,7 +18,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 First, to start your project using this repo as a template, run:
 
 ```bash
-npm create-next-app -e https://github.com/eduardomelonascimento/boilerplate-next
+npx create-next-app -e https://github.com/eduardomelonascimento/boilerplate-next
 # or
 yarn create next-app -e https://github.com/eduardomelonascimento/boilerplate-next
 ```
